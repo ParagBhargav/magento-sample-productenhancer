@@ -1,0 +1,7 @@
+<?php if ($block->isEnabled() && $block->getProduct()): ?>
+    <div class="viewcountwrapper">
+		<span>
+		<?php echo str_replace("{{count}}",$block->getViewCount($block->getProduct()->getId()),$block->getDisplayText()) ?>
+		</span>
+    </div>
+<?php endif; ?>
